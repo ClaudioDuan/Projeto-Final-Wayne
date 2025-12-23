@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Wayne Indústrias | Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <h1>Wayne Indústrias</h1>
+    <div class="user-info">
+      <span id="userName"></span>
+      <button onclick="logout()">Sair</button>
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="resources.html">Recursos</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <h2>Painel de Controle</h2>
+
+    <section class="cards">
+      <div class="card">
+        <h3>Usuários</h3>
+        <p id="totalUsers">0</p>
+      </div>
+      <div class="card">
+        <h3>Recursos</h3>
+        <p id="totalResources">0</p>
+      </div>
+      <div class="card">
+        <h3>Atividades</h3>
+        <p id="totalActivities">0</p>
+      </div>
+    </section>
+    <section class="activities">
+        <h3>Atividades Recentes</h3>
+        <ul id="activityList"></ul>
+    </section>
+
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="auth.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
